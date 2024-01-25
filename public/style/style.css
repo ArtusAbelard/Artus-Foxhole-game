@@ -1,0 +1,119 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    
+}
+
+
+
+#container{
+    height: 100%;
+    width: 100%;
+    
+    /* background-image: url(../assets/image/foxhole.gif);
+    background-position: center;
+    background-size: cover; */
+}
+#acceuil{
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/image/foxhole.gif);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    /* display: none; */
+}
+.titre{
+    width: 50%;
+    height: 30%;
+    background: url(../assets/image/pngegg\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    
+    /* padding-top: 80px; */
+
+}
+.choix{
+    width: 70%;
+    height: 60%;
+    /* background: blue; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
+
+}
+.leschoix{
+    height: 70%;
+    width: 35%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+.gifchoix{
+    
+    height: 54%;
+    width: 67%;
+    background: yellow;
+    border-radius: 150px;
+    opacity: 60%;
+}
+.gifchoix:hover{
+    opacity: 100%;
+}
+.choix1{
+    background-image: url(../assets/image/pxalot-hatchet2.gif);
+    background-position: 51% 60%;
+    background-size: 400px;
+    /* padding-bottom: 30px; */
+    
+}
+.choix2{
+    background-image: url(../assets/image/pxalot-warden-lt2.gif);
+    background-position: 51% 60%;
+    background-size: 400px;
+}
+.faction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 200px;
+    background-color: #161C23;
+    opacity: 60%;
+    border-radius: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E27A48;
+    font-size: large;
+    font-weight: bold;
+    /* background-image: url(../assets/image/backfround.jpg);
+    background-position: center;
+    background-size: cover; */
+}
+
+
+
+
+
+
+#jeux{
+    background-image: url(../assets/image/Two_Tier_Bridge.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    display: none;
+}
