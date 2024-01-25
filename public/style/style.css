@@ -4,8 +4,6 @@ body{
     padding: 0;
     margin: 0;
     overflow: hidden;
-
-    
 }
 
 
@@ -121,10 +119,11 @@ body{
 #flagcolo{
     width: 100%;
     height: 20%;
-    
+   
     display: flex;
     justify-content: space-between;
     opacity: 85%;
+    
 }
 .btnacceuil{
     display: flex;
@@ -159,6 +158,79 @@ body{
     background-image: url(../assets/image/coloflag.jpg);
     background-position: center;
     background-size: 80%;
+}
+
+.attaquant{
+    width: 100%;
+    height: 80%;
+    
+    opacity: 80%;
+    display: flex;
+}
+.attaquantL{
+    width: 50%;
+    height: 100%;
+    
+}
+.attaquantR{
+    width: 50%;
+    height: 100%;
+    /* background: rgb(255, 0, 174); */
+}
+
+
+.barL{
+    width: 100%;
+    height: 15%;
+    /* background: yellow; */
+
+}
+.midL{
+    width: 100%;
+    height: 70%;
+    /* background: purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footerL{
+    width: 100%;
+    height: 15%;
+    /* background: green; */
+}
+#tank{
+    height: 85%;
+    width: 70%;
+    background: #586330;
+    border-radius: 1025px;
+    background-image: url(../assets/image/pxalot-hatchet2.gif);
+    background-position: 50% 60%;
+    background-size: 130%;
+    transform: rotatey(180deg);
+
+}
+#tank:hover{
+    height: 86%;
+    width: 71%;
+    
+    
+}
+#tank1{
+    height: 85%;
+    width: 70%;
+    background: #586330;
+    border-radius: 1025px;
+    background-image: url(../assets/image/pxalot-warden-lt2.gif);
+    background-position: 50% 60%;
+    background-size: 130%;
+}
+
+#tank1:hover{
+    height: 86%;
+    width: 71%;
+    
+    
 }
 
 
@@ -199,3 +271,39 @@ body{
     background-position: center;
     background-size: 80%;
 }
+
+#tank2{
+    height: 85%;
+    width: 70%;
+    background: #586330;
+    border-radius: 1025px;
+    background-image: url(../assets/image/pxalot-hatchet2.gif);
+    background-position: 50% 60%;
+    background-size: 130%;
+    transform: rotatey(180deg);
+
+}
+#tank2:hover{
+    height: 86%;
+    width: 71%;
+    
+    
+}
+#tank3{
+    height: 85%;
+    width: 70%;
+    background: #586330;
+    border-radius: 1025px;
+    background-image: url(../assets/image/pxalot-warden-lt2.gif);
+    background-position: 50% 60%;
+    background-size: 130%;
+}
+
+#tank3:hover{
+    height: 86%;
+    width: 71%;
+    
+    
+}
+
+
