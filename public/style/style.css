@@ -91,13 +91,15 @@ body{
     background-position: center;
     background-size: cover; */
 }
-#h1colo{
+.h1colo{
     color: #586330;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
-#h1warden{
+.h1warden{
     color: #607D8B;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 
@@ -183,8 +185,52 @@ body{
     width: 100%;
     height: 15%;
     /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+.pvbar{
+    width: 70%;
+    height: 20%;
+    background-color: green;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    
+}
+.divpv{
+    height: 100%;
+    width: 20%;
+    background: red;
+
+}
+.divpv1{
+    height: 100%;
+    width: 20%;
+    background: red;
+
+}
+.divpv2{
+    height: 100%;
+    width: 20%;
+    background: red;
+
+}
+.divpv3{
+    height: 100%;
+    width: 20%;
+    background: red;
+
+}
+.divpv4{
+    height: 100%;
+    width: 20%;
+    background: red;
+    border-right:15px ;
+
+}
+
 .midL{
     width: 100%;
     height: 70%;
@@ -198,6 +244,18 @@ body{
     width: 100%;
     height: 15%;
     /* background: green; */
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.lesattaques{
+    width: 15%;
+    height: 80%;
+    background: #272B1A;
+    opacity: 100%;
+    border-radius: 20px;
+    opacity: 100%;
+    
 }
 #tank{
     height: 85%;
@@ -229,9 +287,14 @@ body{
 #tank1:hover{
     height: 86%;
     width: 71%;
-    
-    
 }
+#attaque1{
+    background-image: url(../assets/image/bien.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: 90%;
+}
+
 
 
 
@@ -255,6 +318,9 @@ body{
     justify-content: space-between;
     opacity: 85%;
     transform: rotatey(180deg);
+}
+.lesattaquesw{
+    background-color: #3A4D53;
 }
 
 #headerwarL{
@@ -307,3 +373,76 @@ body{
 }
 
 
+/*! info   */
+
+
+.infocolo{
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    display: none;
+    
+    position: absolute;
+}
+.infowarden{
+    height: 100%;
+    width: 100%;
+    display: none;
+    /* display: flex; */
+    position: absolute;
+
+}
+
+.info1{
+    width: 50%;
+    height: 57%;
+    background-image: url(../assets/image/info1\ hatchet.png);
+    background-position: center;
+    background-size: cover;
+}
+.info2{
+    width: 50%;
+    height: 57%;
+    background-image: url(../assets/image/info2\ hatchet.png);
+    background-position: center;
+    background-size: cover;
+}
+.infowar1{
+    
+    width: 50%;
+    height: 57%;
+    background-image: url(../assets/image/info1warden.png);
+    background-position: center;
+    background-size: cover;
+    
+
+}
+.infowar2{
+    width: 50%;
+    height: 57%;
+    background-image: url(../assets/image/info2warden.png);
+    background-position: center;
+    background-size: cover;
+
+}
+.backtoacceuil{
+    height: 10%;
+    width: 10%;
+    background: #212221;
+    margin-left:40%;
+
+    margin-top: 5%;
+    border-radius: 25px;
+    color: #E27A48;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.backtoacceuil:hover{
+    color: white;
+    border: #E27A48 1px ;
+    
+}
