@@ -289,10 +289,10 @@ body{
     width: 71%;
 }
 #attaque1{
-    background-image: url(../assets/image/bien.jpg);
+    background-image: url(../assets/image/obuss-removebg-preview.png);
     background-repeat: no-repeat;
-    background-position: 50% 10%;
-    background-size: 90%;
+    background-position: center;
+    background-size: 75%;
 }
 
 
