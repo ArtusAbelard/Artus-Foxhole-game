@@ -1,6 +1,8 @@
-import {gifchoix,acceuil,jeuxcolo,jeuxwarden,btnacceuil,infobtn,infobtnwar,infocolo,infowarden,infobacktoacceuil,backtoacceuilwar, } from "./instance.js";
-import { ewa } from "./function.js"
+import {gifchoix,acceuil,jeuxcolo,jeuxwarden,btnacceuil,infobtn,infobtnwar,infocolo,infowarden,infobacktoacceuil,backtoacceuilwar,warden,colonial,attaque1shootcolo } from "./instance.js";
+import { shoot } from "./function.js"
 
+
+//! btn acceuil :
 
 gifchoix[0].addEventListener('click', ()=>{
     acceuil.style.display="none"
@@ -35,6 +37,26 @@ for (let index = 0; index < btnacceuil.length; index++) {
         jeuxcolo.style.display="none"
       
         
-    })
-    
+    })  
 }
+
+//! btn shoot !
+
+// shoot(warden,colonial)
+// shoot(warden,colonial)
+// shoot(warden,colonial)
+// shoot(warden,colonial)
+// shoot(warden,colonial)
+// shoot(warden,colonial)
+
+// shoot(colonial,warden)
+// shoot(colonial,warden)
+// shoot(colonial,warden)
+// shoot(colonial,warden)
+// shoot(colonial,warden)
+// shoot(colonial,warden)
+console.log(attaque1shootcolo);
+attaque1shootcolo.addEventListener("click",()=>{
+    shoot(colonial,warden)
+
+})

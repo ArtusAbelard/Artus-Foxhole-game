@@ -261,6 +261,12 @@ body{
     opacity: 100%;
     
 }
+.lesattaques:hover{
+    background: #373c25;
+    opacity: 100%;
+
+}
+
 #tank{
     height: 85%;
     width: 70%;
@@ -298,6 +304,20 @@ body{
     background-position: center;
     background-size: 75%;
 }
+#attaque2{
+    background-image: url(../assets/image/pxalot-collie-plane-removebg-preview-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: 50% -80%;
+    background-size: 145%;
+}
+#attaque3{
+    background-image: url(../assets/image/pxalot-colonial-truck-removebg-preview-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: 50% -80%;
+    
+    background-size: 110%;
+    
+}
 
 
 
@@ -325,6 +345,11 @@ body{
 }
 .lesattaquesw{
     background-color: #3A4D53;
+    
+}
+.lesattaquesw:hover{
+    background-color: #455c63;
+
 }
 
 #headerwarL{
@@ -357,7 +382,6 @@ body{
     height: 86%;
     width: 71%;
     
-    
 }
 #tank3{
     height: 85%;
@@ -375,6 +399,27 @@ body{
     
     
 }
+#attaquewar1{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+    background-image: url(../assets/image/obuss-modified-removebg-preview.png);
+    transform: rotatey(180deg);
+}
+#attaquewar2{
+    background-image: url(../assets/image/pxalot-bombardiere2ronger-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: 125%;
+}
+#attaquewar3{
+    background-image: url(../assets/image/pxalot-dunneronger-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: 50% -20%;
+    background-size: 125%;
+}
+
 
 
 /*! info   */
