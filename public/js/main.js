@@ -1,15 +1,5 @@
-let gifchoix = document.querySelectorAll(".gifchoix")
-let acceuil = document.querySelector("#acceuil")
-let jeuxcolo = document.querySelector("#jeuxcolo")
-let jeuxwarden = document.querySelector("#jeuxwarden")
-let btnacceuil = document.querySelectorAll(".btnacceuil")
-let infobtn = document.querySelector("#infobtn")
-let infobtnwar = document.querySelector("#infobtnwar")
-let infocolo = document.querySelector(".infocolo")
-let infowarden = document.querySelector(".infowarden")
-let infobacktoacceuil = document.querySelectorAll(".backtoacceuil")
-let backtoacceuilwar = document.querySelector("#backtoacceuilwar")
-
+import {gifchoix,acceuil,jeuxcolo,jeuxwarden,btnacceuil,infobtn,infobtnwar,infocolo,infowarden,infobacktoacceuil,backtoacceuilwar, } from "./instance.js";
+import { ewa } from "./function.js"
 
 
 gifchoix[0].addEventListener('click', ()=>{
@@ -43,6 +33,7 @@ for (let index = 0; index < btnacceuil.length; index++) {
         acceuil.style.display="flex"
         jeuxwarden.style.display="none"
         jeuxcolo.style.display="none"
+      
         
     })
     

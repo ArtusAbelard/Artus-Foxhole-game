@@ -1,0 +1,12 @@
+export let gifchoix = document.querySelectorAll(".gifchoix")
+export let acceuil = document.querySelector("#acceuil")
+export let jeuxcolo = document.querySelector("#jeuxcolo")
+export let jeuxwarden = document.querySelector("#jeuxwarden")
+export let btnacceuil = document.querySelectorAll(".btnacceuil")
+export let infobtn = document.querySelector("#infobtn")
+export let infobtnwar = document.querySelector("#infobtnwar")
+export let infocolo = document.querySelector(".infocolo")
+export let infowarden = document.querySelector(".infowarden")
+export let infobacktoacceuil = document.querySelectorAll(".backtoacceuil")
+export let backtoacceuilwar = document.querySelector("#backtoacceuilwar")
+
