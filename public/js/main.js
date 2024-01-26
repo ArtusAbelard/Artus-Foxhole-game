@@ -36,7 +36,10 @@ function randomattack() {
             amowar.innerHTML=warden.amo
     }
     }
-    pvbarcolo()   
+    pvbarcolo()
+    setTimeout(()=>{
+        winner() 
+    },1000)  
 }
 
 function winner() {
@@ -98,9 +101,9 @@ amowar.innerHTML=warden.amo
 
 
 attaque1shootcolo.addEventListener("click",()=>{
-    // pvbarcolo()
     
-    winner()
+    
+    
     if (colonial.amo==2){
         attaque3convois.style.display="block"
     
@@ -120,12 +123,15 @@ attaque1shootcolo.addEventListener("click",()=>{
         attaque1shootcolo.style.display="block"
     },2000)
     pvbarwarden()
+    setTimeout(()=>{
+        winner() 
+    },1000)  
 })
 
 //! btn attaque aerienne
 
 attaque2aeriennecolo.addEventListener('click', ()=>{
-    winner()
+    
     airbomb(colonial,warden)
     setTimeout(()=>{
         randomattack()
@@ -136,18 +142,26 @@ attaque2aeriennecolo.addEventListener('click', ()=>{
     setTimeout(()=>{
         attaque2aeriennecolo.style.display="block"
     },15000)
+    pvbarwarden()
+    setTimeout(()=>{
+        winner() 
+    },1000)  
 })
 
 //! btn convois de ravitaillement
 
 attaque3convois.addEventListener('click', ()=>{
-    winner()
+    
     colonial.amo=colonial.amo+5
     amocolo.innerHTML=colonial.amo
     attaque3convois.style.display="none"
     setTimeout(()=>{
         randomattack()
     },2000)
+    pvbarwarden()
+    setTimeout(()=>{
+        winner() 
+    },1000)  
 
 })
 
@@ -170,6 +184,10 @@ attaque4repair.addEventListener('click', ()=>{
     setTimeout(()=>{
         attaque4repair.style.display="block"
     },2000)
+    pvbarwarden()
+    setTimeout(()=>{
+        winner() 
+    },1000)  
 })
 
 //! bar pv colo
@@ -182,14 +200,14 @@ function pvbarcolo() {
         divpv[9].classList="divpv divpv1"
         for (let i = 0; i < 9; i++) {
             divpv[i].classList="divpv"
-            console.log(divpv[i].classList);    
+               
         }
     }else if((colonial.pv<1200)&&(colonial.pv>=1050)){
         divpv[9].classList="divpv divpv1"
         divpv[8].classList="divpv divpv1"
         for (let i = 0; i < 8; i++) {
             divpv[i].classList="divpv"
-            console.log(divpv[i].classList);    
+               
         }
     }else if((colonial.pv<1050)&&(colonial.pv>=900)){
         divpv[9].classList="divpv divpv1"
@@ -197,7 +215,7 @@ function pvbarcolo() {
         divpv[7].classList="divpv divpv1"
         for (let i = 0; i < 7; i++) {
             divpv[i].classList="divpv"
-            console.log(divpv[i].classList);    
+               
         }
     }else if((colonial.pv<900)&&(colonial.pv>=750)){
         divpv[9].classList="divpv divpv1"
@@ -206,7 +224,7 @@ function pvbarcolo() {
         divpv[6].classList="divpv divpv1"
         for (let i = 0; i < 6; i++) {
             divpv[i].classList="divpv"
-            console.log(divpv[i].classList);    
+                
         }
     }else if((colonial.pv<750)&&(colonial.pv>=600)){
         divpv[9].classList="divpv divpv1"
@@ -216,7 +234,7 @@ function pvbarcolo() {
         divpv[5].classList="divpv divpv1"
         for (let i = 0; i < 5; i++) {
             divpv[i].classList="divpv"
-            console.log(divpv[i].classList);    
+               
         }
     }else if((colonial.pv<600)&&(colonial.pv>=450)){
         divpv[9].classList="divpv divpv1"
@@ -227,7 +245,7 @@ function pvbarcolo() {
         divpv[4].classList="divpv divpv1"
         for (let i = 0; i < 4; i++) {
             divpv[i].classList="divpv"
-            console.log(divpv[i].classList);    
+                
         }
     }else if((colonial.pv<450)&&(colonial.pv>=300)){
         divpv[9].classList="divpv divpv1"
@@ -239,7 +257,7 @@ function pvbarcolo() {
         divpv[3].classList="divpv divpv1"
         for (let i = 0; i < 3; i++) {
             divpv[i].classList="divpv"
-            console.log(divpv[i].classList);    
+                
         }
     }else if((colonial.pv<300)&&(colonial.pv>=150)){
         divpv[9].classList="divpv divpv1"
@@ -252,7 +270,7 @@ function pvbarcolo() {
         divpv[2].classList="divpv divpv1"
         for (let i = 0; i < 2; i++) {
             divpv[i].classList="divpv"
-            console.log(divpv[i].classList);    
+                
         }
     }else if((colonial.pv<150)&&(colonial.pv>=1)){
         divpv[9].classList="divpv divpv1"
@@ -266,7 +284,7 @@ function pvbarcolo() {
         divpv[1].classList="divpv divpv1"
         for (let i = 0; i < 1; i++) {
             divpv[i].classList="divpv"
-            console.log(divpv[i].classList);    
+              
         }
     }else if(colonial.pv<1){
         divpv[9].classList="divpv divpv1"
@@ -303,14 +321,14 @@ function pvbarwarden() {
         divpvwar[9].classList="divpv divpv1"
         for (let i = 0; i < 9; i++) {
             divpvwar[i].classList="divpv"
-            console.log(divpvwar[i].classList);    
+               
         }
     }else if((warden.pv<1200)&&(warden.pv>=1050)){
         divpvwar[9].classList="divpv divpv1"
         divpvwar[8].classList="divpv divpv1"
         for (let i = 0; i < 8; i++) {
             divpvwar[i].classList="divpv"
-            console.log(divpvwar[i].classList);    
+             
         }
     }else if((warden.pv<1050)&&(warden.pv>=900)){
         divpvwar[9].classList="divpv divpv1"
@@ -318,7 +336,7 @@ function pvbarwarden() {
         divpvwar[7].classList="divpv divpv1"
         for (let i = 0; i < 7; i++) {
             divpvwar[i].classList="divpv"
-            console.log(divpvwar[i].classList);    
+            
         }
     }else if((warden.pv<900)&&(warden.pv>=750)){
         divpvwar[9].classList="divpv divpv1"
@@ -327,7 +345,7 @@ function pvbarwarden() {
         divpvwar[6].classList="divpv divpv1"
         for (let i = 0; i < 6; i++) {
             divpvwar[i].classList="divpv"
-            console.log(divpvwar[i].classList);    
+               
         }
     }else if((warden.pv<750)&&(warden.pv>=600)){
         divpvwar[9].classList="divpv divpv1"
@@ -337,7 +355,7 @@ function pvbarwarden() {
         divpvwar[5].classList="divpv divpv1"
         for (let i = 0; i < 5; i++) {
             divpvwar[i].classList="divpv"
-            console.log(divpvwar[i].classList);    
+          
         }
     }else if((warden.pv<600)&&(warden.pv>=450)){
         divpvwar[9].classList="divpv divpv1"
@@ -348,7 +366,7 @@ function pvbarwarden() {
         divpvwar[4].classList="divpv divpv1"
         for (let i = 0; i < 4; i++) {
             divpvwar[i].classList="divpv"
-            console.log(divpvwar[i].classList);    
+             
         }
     }else if((warden.pv<450)&&(warden.pv>=300)){
         divpvwar[9].classList="divpv divpv1"
@@ -360,7 +378,7 @@ function pvbarwarden() {
         divpvwar[3].classList="divpv divpv1"
         for (let i = 0; i < 3; i++) {
             divpvwar[i].classList="divpv"
-            console.log(divpvwar[i].classList);    
+                
         }
     }else if((warden.pv<300)&&(warden.pv>=150)){
         divpvwar[9].classList="divpv divpv1"
@@ -373,7 +391,7 @@ function pvbarwarden() {
         divpvwar[2].classList="divpv divpv1"
         for (let i = 0; i < 2; i++) {
             divpvwar[i].classList="divpv"
-            console.log(divpvwar[i].classList);    
+               
         }
     }else if((warden.pv<150)&&(warden.pv>=1)){
         divpvwar[9].classList="divpv divpv1"
@@ -387,7 +405,7 @@ function pvbarwarden() {
         divpvwar[1].classList="divpv divpv1"
         for (let i = 0; i < 1; i++) {
             divpvwar[i].classList="divpv"
-            console.log(divpvwar[i].classList);    
+             
         }
     }else if(warden.pv<1){
         divpvwar[9].classList="divpv divpv1"

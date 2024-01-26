@@ -30,4 +30,4 @@ export let divpvwar = document.querySelectorAll(".divpvwar")
 
 // export let warden = new CLASS.warden ("Devitt-markIII",50,500,100,6)
 export let warden = new CLASS.warden ("Devitt-markIII",200,1500,100,6)
-export let colonial = new CLASS.colonial ("H5 Hatchet",150,1500,150,5)
+export let colonial = new CLASS.colonial ("H5 Hatchet",100,1500,150,5)

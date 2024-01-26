@@ -43,12 +43,3 @@ export function repair(x) {
     } 
 }
 
-// export function switche(joueur) {
-//     if (joueur == 0) joueur = 1;
-//     else joueur = 0;
-
-//     joueur = (joueur+1)%2
-//     joueur = (joueur+1)%2
-//     console.log(joueur)
-
-// }
