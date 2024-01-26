@@ -1,4 +1,4 @@
-import {gifchoix,acceuil,jeuxcolo,jeuxwarden,btnacceuil,infobtn,infobtnwar,infocolo,infowarden,infobacktoacceuil,backtoacceuilwar,warden,colonial,attaque1shootcolo } from "./instance.js";
+import {gifchoix,acceuil,jeuxcolo,jeuxwarden,btnacceuil,infobtn,infobtnwar,infocolo,infowarden,infobacktoacceuil,backtoacceuilwar,warden,colonial,attaque1shootcolo,pvtextwar,armorwar, attaque2aeriennecolo } from "./instance.js";
 import { shoot } from "./function.js"
 
 
@@ -41,22 +41,29 @@ for (let index = 0; index < btnacceuil.length; index++) {
 }
 
 //! btn shoot !
-
-// shoot(warden,colonial)
-// shoot(warden,colonial)
-// shoot(warden,colonial)
-// shoot(warden,colonial)
-// shoot(warden,colonial)
-// shoot(warden,colonial)
-
-// shoot(colonial,warden)
-// shoot(colonial,warden)
-// shoot(colonial,warden)
-// shoot(colonial,warden)
-// shoot(colonial,warden)
-// shoot(colonial,warden)
-console.log(attaque1shootcolo);
+pvtextwar.innerText = warden.pv 
 attaque1shootcolo.addEventListener("click",()=>{
-    shoot(colonial,warden)
-
+    shoot(colonial,warden,armorwar)
+    pvtextwar.innerText = warden.pv 
+    attaque1shootcolo.style.display="none"
+    setTimeout(()=>{
+        attaque1shootcolo.style.display="block"
+    },5000)
 })
+
+//! btn attaque aerienne
+
+attaque2aeriennecolo.addEventListener('click', ()=>{
+
+    attaque2aeriennecolo.style.display="none"
+    setTimeout(()=>{
+        attaque2aeriennecolo.style.display="block"
+    },30000)
+})
+
+
+
+
+
+
+

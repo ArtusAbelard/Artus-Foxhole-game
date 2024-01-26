@@ -12,6 +12,9 @@ export let infowarden = document.querySelector(".infowarden")
 export let infobacktoacceuil = document.querySelectorAll(".backtoacceuil")
 export let backtoacceuilwar = document.querySelector("#backtoacceuilwar")
 export let attaque1shootcolo = document.querySelector("#attaque1")
+export let attaque2aeriennecolo = document.querySelector("#attaque2")
+export let pvtextwar = document.querySelector(".pvwar")
+export let armorwar = document.querySelector(".armorwar")
 
 
 
