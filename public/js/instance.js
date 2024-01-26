@@ -11,16 +11,27 @@ export let infocolo = document.querySelector(".infocolo")
 export let infowarden = document.querySelector(".infowarden")
 export let infobacktoacceuil = document.querySelectorAll(".backtoacceuil")
 export let backtoacceuilwar = document.querySelector("#backtoacceuilwar")
+
 export let attaque1shootcolo = document.querySelector("#attaque1")
 export let attaque2aeriennecolo = document.querySelector("#attaque2")
 export let attaque3convois = document.querySelector("#attaque3")
 export let attaque4repair = document.querySelector("#attaque4")
+export let lesattaquesw = document.querySelectorAll(".lesattaquesw")
+
+
 export let pvtextwar = document.querySelector(".pvwar")
 export let pvtextcolo = document.querySelector(".pvcolo")
 export let armorwar = document.querySelector(".armorwar")
 export let armorcol = document.querySelector(".armorcol")
 export let amowar = document.querySelector(".amowar")
 export let amocolo = document.querySelector(".amocolo")
+
+export let pvtextwarw = document.querySelector(".pvwarw")
+export let pvtextcolow = document.querySelector(".pvcolow")
+export let armorwarw = document.querySelector(".armorwarw")
+export let armorcolw = document.querySelector(".armorcolw")
+export let amowarw = document.querySelector(".amowarw")
+export let amocolow = document.querySelector(".amocolow")
 
 export let divpv = document.querySelectorAll(".divpv")
 export let divpvwar = document.querySelectorAll(".divpvwar")
