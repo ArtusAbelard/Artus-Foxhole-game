@@ -24,13 +24,31 @@ export function shoot(attaquant,victime,armor) {
         
     }else{
         alert("pas assez de munition")
+        // faire clignoter le txt amuniton 
     }
 }
 
-
-export function repair(x) {
-    x.pv=x.pv+50
-
-    
-    
+export function airbomb(attaquant,victime) {
+    victime.pv=victime.pv-(attaquant.force/2)
+    victime.armor=victime.armor-40
+    if (victime.pv<=0) {
+        victime.pv=0
+    }
 }
+export function repair(x) {
+    if (x.pv<=0) {
+        console.log("trop tard!");
+    }else{
+        x.pv=x.pv+50
+    } 
+}
+
+// export function switche(joueur) {
+//     if (joueur == 0) joueur = 1;
+//     else joueur = 0;
+
+//     joueur = (joueur+1)%2
+//     joueur = (joueur+1)%2
+//     console.log(joueur)
+
+// }

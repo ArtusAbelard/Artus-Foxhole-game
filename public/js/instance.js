@@ -24,5 +24,7 @@ export let amocolo = document.querySelector(".amocolo")
 
 
 
-export let warden = new CLASS.warden ("Devitt-markIII",50,500,100,6)
+
+// export let warden = new CLASS.warden ("Devitt-markIII",50,500,100,6)
+export let warden = new CLASS.warden ("Devitt-markIII",50,600,100,6)
 export let colonial = new CLASS.colonial ("H5 Hatchet",60,400,120,5)

@@ -5,9 +5,6 @@ export class warden {
         this.pv=pv;
         this.armor=armor;
         this.amo=amo;
-        // this.shoot = () => {
-
-        // }
 
         
     }
