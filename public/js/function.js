@@ -39,7 +39,7 @@ export function repair(x) {
     if (x.pv<=0) {
         console.log("trop tard!");
     }else{
-        x.pv=x.pv+50
+        x.pv=x.pv+100
     } 
 }
 
