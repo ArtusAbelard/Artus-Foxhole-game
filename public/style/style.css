@@ -191,6 +191,10 @@ body{
     justify-content: center;
 
 }
+.barLwar{
+    transform: rotatey(180deg);
+
+}
 .statuscol{
     display: flex;
     justify-content: space-around;
