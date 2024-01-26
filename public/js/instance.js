@@ -22,6 +22,9 @@ export let armorcol = document.querySelector(".armorcol")
 export let amowar = document.querySelector(".amowar")
 export let amocolo = document.querySelector(".amocolo")
 
+export let divpv = document.querySelectorAll(".divpv")
+export let divpvwar = document.querySelectorAll(".divpvwar")
+
 
 
 

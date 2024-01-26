@@ -230,39 +230,22 @@ body{
 }
 .divpv{
     height: 100%;
-    width: 20%;
+    width: 10%;
     background: red;
     background: transparent;
 
 }
+.divpvwar{
+    height: 100%;
+    width: 10%;
+    background: red;
+    background: transparent;
+}
+
 .divpv1{
     height: 100%;
-    width: 20%;
+    width: 10%;
     background: red;
-    background: transparent;
-
-}
-.divpv2{
-    height: 100%;
-    width: 20%;
-    background: red;
-    background: transparent;
-
-}
-.divpv3{
-    height: 100%;
-    width: 20%;
-    background: red;
-    background: transparent;
-
-}
-.divpv4{
-    height: 100%;
-    width: 20%;
-    background: red;
-    border-right:15px ;
-    background: transparent;
-
 }
 
 .midL{
