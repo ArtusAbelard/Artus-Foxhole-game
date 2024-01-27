@@ -18,7 +18,6 @@ export let attaque3convois = document.querySelector("#attaque3")
 export let attaque4repair = document.querySelector("#attaque4")
 export let lesattaquesw = document.querySelectorAll(".lesattaquesw")
 
-
 export let pvtextwar = document.querySelector(".pvwar")
 export let pvtextcolo = document.querySelector(".pvcolo")
 export let armorwar = document.querySelector(".armorwar")
@@ -36,9 +35,5 @@ export let amocolow = document.querySelector(".amocolow")
 export let divpv = document.querySelectorAll(".divpv")
 export let divpvwar = document.querySelectorAll(".divpvwar")
 
-
-
-
-// export let warden = new CLASS.warden ("Devitt-markIII",50,500,100,6)
 export let warden = new CLASS.warden ("Devitt-markIII",200,1500,100,6)
 export let colonial = new CLASS.colonial ("H5 Hatchet",100,1500,150,5)

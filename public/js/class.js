@@ -4,9 +4,7 @@ export class warden {
         this.force=force;
         this.pv=pv;
         this.armor=armor;
-        this.amo=amo;
-
-        
+        this.amo=amo;      
     }
 }
 export class colonial {
@@ -16,6 +14,5 @@ export class colonial {
         this.pv=pv;
         this.armor=armor;
         this.amo=amo;
-
     }
 }

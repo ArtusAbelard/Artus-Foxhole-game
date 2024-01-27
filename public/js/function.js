@@ -1,5 +1,3 @@
-
-
 export function shoot(attaquant,victime,armor) {
     if (attaquant.amo>0) {
         if (victime.armor<=50) {
@@ -10,8 +8,7 @@ export function shoot(attaquant,victime,armor) {
             armor.style.color="red"
             if (victime.pv<=0) {
                 victime.pv=0
-            }
-            
+            }     
         }else{
             victime.pv=victime.pv-attaquant.force
             victime.armor=victime.armor-20
@@ -20,8 +17,7 @@ export function shoot(attaquant,victime,armor) {
             if (victime.pv<=0) {
                 victime.pv=0
             }
-        }
-        
+        }   
     }else{
         alert("pas assez de munition")
         // faire clignoter le txt amuniton 

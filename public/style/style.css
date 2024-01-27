@@ -5,9 +5,6 @@ body{
     margin: 0;
     overflow: hidden;
 }
-
-
-
 #container{
     height: 100%;
     width: 100%;
@@ -22,7 +19,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
     /* display: none; */
 }
 .titre{
@@ -50,8 +46,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
-    
+    padding-top: 10px; 
 }
 .gifchoix{
     height: 54%;
@@ -66,8 +61,7 @@ body{
 .choix1{
     background-image: url(../assets/image/pxalot-hatchet2.gif);
     background-position: 51% 60%;
-    background-size: 400px;
-    
+    background-size: 400px;  
 }
 .choix2{
     background-image: url(../assets/image/pxalot-warden-lt2.gif);
@@ -86,10 +80,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: #E27A48;
     font-size: large;
-    font-weight: bold;
-    /* background-image: url(../assets/image/backfround.jpg);
-    background-position: center;
-    background-size: cover; */
+    font-weight: bold; 
 }
 .h1colo{
     color: #586330;
@@ -102,10 +93,7 @@ body{
     text-align: center;
 }
 
-
 /*! jeux colo */
-
-
 
 #jeuxcolo{
     background-image: url(../assets/image/field2.jpg);
@@ -117,7 +105,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-
 #flagcolo{
     width: 100%;
     height: 20%;
@@ -128,7 +115,10 @@ body{
     
 }
 .btnacceuil{
-    display: flex;
+    /* position:absolute;
+    margin-left: 450px;
+    margin-top: 5000px; */
+    display: none;
     justify-content: center;
     align-items: center;
     height: 80px;
@@ -140,13 +130,11 @@ body{
     color: #E27A48;
     font-size: large;
     font-weight: bold;
-    margin-top: 50px;
-    
+    margin-top: 50px;   
 }
 .btnacceuil:hover{
     opacity: 100%;
 }
-
 #headerL{
     height: 100%;
     width: 20%;
@@ -161,7 +149,6 @@ body{
     background-position: center;
     background-size: 80%;
 }
-
 .attaquant{
     width: 100%;
     height: 80%;
@@ -179,8 +166,6 @@ body{
     height: 100%;
     /* background: rgb(255, 0, 174); */
 }
-
-
 .barL{
     width: 100%;
     height: 15%;
@@ -217,12 +202,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    
-
 }
-/* .pvwar{
-
-} */
 .pvbar{
     width: 70%;
     height: 20%;
@@ -245,13 +225,11 @@ body{
     background: red;
     background: transparent;
 }
-
 .divpv1{
     height: 100%;
     width: 10%;
     background: red;
 }
-
 .midL{
     width: 100%;
     height: 70%;
@@ -279,7 +257,6 @@ body{
     
     
 }
-
 .lesattaques:hover{
     background: #373c25;
     opacity: 100%;
@@ -289,7 +266,6 @@ body{
     background: #4f5636;
     
 }
-
 #tank{
     height: 85%;
     width: 70%;
@@ -316,7 +292,6 @@ body{
     background-position: 50% 60%;
     background-size: 130%;
 }
-
 #tank1:hover{
     height: 86%;
     width: 71%;
@@ -348,12 +323,8 @@ body{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     /* transform: rotatey(180deg); */
-    background-size: 50%;
-    
+    background-size: 50%;  
 }
-
-
-
 /*! jeux warden */
 
 #jeuxwarden{
@@ -365,7 +336,6 @@ body{
     width: 100%;
     display: none;
 }
-
 #flagwarden{
     width: 100%;
     height: 20%;
@@ -375,18 +345,14 @@ body{
     transform: rotatey(180deg);
 }
 .lesattaquesw{
-    background-color: #3A4D53;
-    
+    background-color: #3A4D53;    
 }
 .lesattaquesw:hover{
     background-color: #455c63;
-
 }
 .lesattaquesw:active{
     background-color: #5a7881;
-
 }
-
 #headerwarL{
     height: 100%;
     width: 16%;
@@ -401,7 +367,6 @@ body{
     background-position: center;
     background-size: 80%;
 }
-
 #tank2{
     height: 85%;
     width: 70%;
@@ -411,12 +376,10 @@ body{
     background-position: 50% 60%;
     background-size: 130%;
     transform: rotatey(180deg);
-
 }
 #tank2:hover{
     height: 86%;
-    width: 71%;
-    
+    width: 71%;   
 }
 #tank3{
     height: 85%;
@@ -427,15 +390,11 @@ body{
     background-position: 50% 60%;
     background-size: 130%;
 }
-
 #tank3:hover{
     height: 86%;
-    width: 71%;
-    
-    
+    width: 71%;   
 }
-#attaquewar1{
-    
+#attaquewar1{  
     background-repeat: no-repeat;
     background-position: center;
     background-size: 75%;
@@ -455,18 +414,12 @@ body{
     background-size: 125%;
     transform: rotatey(180deg);   
 }
-
-
-
 /*! info   */
-
-
 .infocolo{
     height: 100%;
     width: 100%;
     /* display: flex; */
-    display: none;
-    
+    display: none;  
     position: absolute;
 }
 .infowarden{
@@ -475,9 +428,7 @@ body{
     display: none;
     /* display: flex; */
     position: absolute;
-
 }
-
 .info1{
     width: 50%;
     height: 57%;
@@ -492,15 +443,12 @@ body{
     background-position: center;
     background-size: cover;
 }
-.infowar1{
-    
+.infowar1{ 
     width: 50%;
     height: 57%;
     background-image: url(../assets/image/info1warden.png);
     background-position: center;
     background-size: cover;
-    
-
 }
 .infowar2{
     width: 50%;
@@ -508,14 +456,12 @@ body{
     background-image: url(../assets/image/info2warden.png);
     background-position: center;
     background-size: cover;
-
 }
 .backtoacceuil{
     height: 10%;
     width: 10%;
     background: #212221;
     margin-left:40%;
-
     margin-top: 5%;
     border-radius: 25px;
     color: #E27A48;
@@ -529,5 +475,4 @@ body{
 .backtoacceuil:hover{
     color: white;
     border: #E27A48 1px ;
-    
 }
