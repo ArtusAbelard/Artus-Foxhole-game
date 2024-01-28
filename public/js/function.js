@@ -18,9 +18,6 @@ export function shoot(attaquant,victime,armor) {
                 victime.pv=0
             }
         }   
-    }else{
-        alert("pas assez de munition")
-        // faire clignoter le txt amuniton 
     }
 }
 
@@ -88,3 +85,15 @@ export function reloadingw(tank) {
         },1500)   
 }
 
+export function amolow(x) {
+    x.style.color="white"
+    setTimeout(()=>{
+        x.style.color="#E27A48"
+        setTimeout(()=>{
+            x.style.color="white"
+            setTimeout(()=>{
+                x.style.color="#E27A48"
+            },100)
+        },100)
+    },100)
+}

@@ -1,7 +1,6 @@
-import {gifchoix,acceuil,jeuxcolo,jeuxwarden,btnacceuil,infobtn,infobtnwar,infocolo,infowarden,infobacktoacceuil,backtoacceuilwar,warden,colonial,attaque1shootcolo,pvtextwar,armorwar, attaque2aeriennecolo ,pvtextcolo,armorcol,amocolo,amowar,attaque3convois,attaque4repair,divpv,divpvwar,lesattaquesw,pvtextwarw,pvtextcolow,armorwarw,armorcolw,amowarw,amocolow,tankcolo,tankwarden,tankcolow,tankwardenw,son } from "./instance.js";
-import { shoot,repair,airbomb,bombgif,fxattack,reloading,bombgifw,reloadingw,fxrepair } from "./function.js"
+import {gifchoix,acceuil,jeuxcolo,jeuxwarden,btnacceuil,infobtn,infobtnwar,infocolo,infowarden,infobacktoacceuil,backtoacceuilwar,warden,colonial,attaque1shootcolo,pvtextwar,armorwar, attaque2aeriennecolo ,pvtextcolo,armorcol,amocolo,amowar,attaque3convois,attaque4repair,divpv,divpvwar,lesattaquesw,pvtextwarw,pvtextcolow,armorwarw,armorcolw,amowarw,amocolow,tankcolo,tankwarden,tankcolow,tankwardenw,son,txtstatuscol } from "./instance.js";
+import { shoot,repair,airbomb,bombgif,fxattack,reloading,bombgifw,reloadingw,fxrepair,amolow } from "./function.js"
 
-// son[0].play();
 son[0].volume=0.4;
 son[1].volume=0.08;
 son[2].volume=0.11;
@@ -9,8 +8,6 @@ son[2].volume=0.11;
 // son[4].volume=1
 son[son.length-2].volume=1;
 son[son.length-1].volume=0.8;
-
-
 
 function randomattack() {
     if (warden.amo==0) {
@@ -45,11 +42,7 @@ function randomattack() {
             amowar.innerHTML=warden.amo
         }else{
             fxattack(tankcolo)
-
             son[son.length-2].play()
-              
-
-
             console.log("shoot !!!");
             shoot(warden,colonial,armorcol)
             pvtextwar.innerText = warden.pv 
@@ -158,7 +151,8 @@ pvtextwar.innerText = warden.pv
 pvtextcolo.innerText = colonial.pv
 amocolo.innerHTML=colonial.amo
 amowar.innerHTML=warden.amo
-
+console.log(txtstatuscol);
+console.log(colonial.amo);
 attaque1shootcolo.addEventListener("click",()=>{   
     if (colonial.amo==2){
         attaque3convois.style.display="block"   
@@ -167,6 +161,8 @@ attaque1shootcolo.addEventListener("click",()=>{
     if (colonial.amo>0) {
         son[son.length-1].play()
         fxattack(tankwarden)
+    }else if (colonial.amo==0){
+        amolow(txtstatuscol[0])
     }
     setTimeout(()=>{
         randomattack()
@@ -225,7 +221,6 @@ attaque3convois.addEventListener('click', ()=>{
     setTimeout(()=>{
         winner() 
     },1000)  
-
 })
 
 //! btn repair 
@@ -237,12 +232,10 @@ attaque4repair.addEventListener('click', ()=>{
     setTimeout(()=>{
         randomattack()
     },2000)
-
     pvtextwar.innerText = warden.pv 
     pvtextcolo.innerText = colonial.pv
     amowar.innerHTML=warden.amo
     amocolo.innerHTML=colonial.amo
-
     attaque4repair.style.display="none"
     setTimeout(()=>{
         attaque4repair.style.display="block"
@@ -309,14 +302,14 @@ amocolow.innerHTML=colonial.amo
 amowarw.innerHTML=warden.amo
 lesattaquesw[3].addEventListener("click",()=>{
     if (warden.amo==2){
-        lesattaquesw[1].style.display="block"
-    
-        
+        lesattaquesw[1].style.display="block"   
     }
     shoot(warden,colonial,armorcolw)
     if (warden.amo>0) {
         son[son.length-1].play()
         fxattack(tankcolow)
+    }else{
+        amolow(txtstatuscol[9])
     }
     setTimeout(()=>{
         randomattackw()
@@ -336,8 +329,6 @@ lesattaquesw[3].addEventListener("click",()=>{
 })
 
 //! btn attaque aerienne
-
-
 
 lesattaquesw[2].addEventListener('click', ()=>{
     son[3].play()
@@ -373,9 +364,7 @@ lesattaquesw[1].addEventListener('click', ()=>{
     setTimeout(()=>{
         winner() 
     },1000)  
-
 })
-
 //! btn repair
 
 lesattaquesw[0].addEventListener('click', ()=>{
@@ -390,8 +379,7 @@ lesattaquesw[0].addEventListener('click', ()=>{
     pvtextcolow.innerText = colonial.pv
     amowarw.innerHTML=warden.amo
     amocolow.innerHTML=colonial.amo
-    
-    
+
     lesattaquesw[0].style.display="none"
     setTimeout(()=>{
         lesattaquesw[0].style.display="block"
