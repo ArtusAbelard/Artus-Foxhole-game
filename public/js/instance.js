@@ -12,6 +12,11 @@ export let infowarden = document.querySelector(".infowarden")
 export let infobacktoacceuil = document.querySelectorAll(".backtoacceuil")
 export let backtoacceuilwar = document.querySelector("#backtoacceuilwar")
 
+export let tankcolo = document.querySelector("#tank")
+export let tankwarden = document.querySelector("#tank1")
+export let tankcolow = document.querySelector("#tank2")
+export let tankwardenw = document.querySelector("#tank3")
+
 export let attaque1shootcolo = document.querySelector("#attaque1")
 export let attaque2aeriennecolo = document.querySelector("#attaque2")
 export let attaque3convois = document.querySelector("#attaque3")

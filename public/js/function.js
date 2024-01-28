@@ -39,3 +39,52 @@ export function repair(x) {
     } 
 }
 
+
+export function bombgif(tank) {
+    tank.classList.toggle("fxplanecolo")
+    setTimeout(()=>{
+        tank.classList.toggle("fxplanecolo")
+    },1500)
+}
+export function bombgifw(tank) {
+    tank.classList.toggle("fxplanewarden")
+    setTimeout(()=>{
+        tank.classList.toggle("fxplanewarden")
+    },1500)
+}
+
+
+export function fxattack(tank) {
+    tank.style.height="87%"
+    tank.style.width="72%"
+    tank.classList.toggle("fxattack")
+    setTimeout(()=>{
+        tank.classList.toggle("fxattack")
+        tank.style.height="85%"
+        tank.style.width="70%"
+    },150)  
+}
+export function fxrepair(tank) {
+    tank.style.height="87%"
+    tank.style.width="72%"
+    tank.classList.toggle("fxrepair")
+    setTimeout(()=>{
+        tank.classList.toggle("fxrepair")
+        tank.style.height="85%"
+        tank.style.width="70%"
+    },150)  
+}
+
+export function reloading(tank) {
+    tank.classList.toggle("fxreloading")
+    setTimeout(()=>{
+        tank.classList.toggle("fxreloading")
+        },1500)   
+}
+export function reloadingw(tank) {
+    tank.classList.toggle("fxreloadingw")
+    setTimeout(()=>{
+        tank.classList.toggle("fxreloadingw")
+        },1500)   
+}
+
