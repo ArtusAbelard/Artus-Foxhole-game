@@ -2,10 +2,13 @@ import {gifchoix,acceuil,jeuxcolo,jeuxwarden,btnacceuil,infobtn,infobtnwar,infoc
 import { shoot,repair,airbomb,bombgif,fxattack,reloading,bombgifw,reloadingw,fxrepair } from "./function.js"
 
 // son[0].play();
-son[0].volume=0.5;
-son[1].volume=0.14;
-son[2].volume=0.14;
-son[son.length-1].volume=1
+son[0].volume=0.4;
+son[1].volume=0.08;
+son[2].volume=0.11;
+// son[3].volume=1
+// son[4].volume=1
+son[son.length-2].volume=1
+son[son.length-1].volume=0.8
 
 // acceuil.addEventListener("mouseover" ,()=>{
 //     son[0].play()
@@ -22,6 +25,7 @@ function randomattack() {
         amowar.innerHTML=warden.amo
         console.log("reloading");  
         reloadingw(tankwarden)
+        son[4].play()
     }else{
         let attack = Math.floor(Math.random()*3)
         console.log(attack);
@@ -30,6 +34,7 @@ function randomattack() {
              
             bombgifw(tankwarden)
             console.log("airbomb!!");
+            son[3].play()
             airbomb(warden,colonial)
             pvtextwar.innerText = warden.pv 
             pvtextcolo.innerText = colonial.pv
@@ -47,7 +52,11 @@ function randomattack() {
             amowar.innerHTML=warden.amo
         }else{
             fxattack(tankcolo)
-            son[son.length-1].play()   
+
+            son[son.length-2].play()
+              
+
+
             console.log("shoot !!!");
             shoot(warden,colonial,armorcol)
             pvtextwar.innerText = warden.pv 
@@ -187,6 +196,7 @@ attaque1shootcolo.addEventListener("click",()=>{
 //! btn attaque aerienne
 
 attaque2aeriennecolo.addEventListener('click', ()=>{
+    son[3].play()
     bombgif(tankcolo)
     airbomb(colonial,warden)
     setTimeout(()=>{
@@ -210,6 +220,7 @@ attaque2aeriennecolo.addEventListener('click', ()=>{
 //! btn convois de ravitaillement
 
 attaque3convois.addEventListener('click', ()=>{
+    son[4].play()
     reloading(tankcolo) 
     colonial.amo=colonial.amo+5
     amocolo.innerHTML=colonial.amo
@@ -257,12 +268,14 @@ function randomattackw() {
         colonial.amo=colonial.amo+5
         amowarw.innerHTML=colonial.amo
         console.log("reloading");
-        reloading(tankcolow)       
+        reloading(tankcolow) 
+        son[4].play()      
     }else{
         let attackw = Math.floor(Math.random()*3)
         console.log(attackw);
         if (attackw==0) {
             console.log("airbomb!!");
+            son[3].play()
             airbomb(colonial,warden)
             pvtextwarw.innerText = warden.pv 
             pvtextcolow.innerText = colonial.pv
@@ -280,7 +293,7 @@ function randomattackw() {
             amowarw.innerHTML=warden.amo    
     }else{
             console.log("shoot !!!");
-            son[son.length-1].play()
+            son[son.length-2].play()
             shoot(colonial,warden,armorwarw)
             pvtextwarw.innerText = warden.pv 
             pvtextcolow.innerText = colonial.pv
@@ -334,6 +347,7 @@ lesattaquesw[3].addEventListener("click",()=>{
 
 
 lesattaquesw[2].addEventListener('click', ()=>{
+    son[3].play()
     bombgifw(tankwardenw)
     airbomb(warden,colonial)
     setTimeout(()=>{
@@ -354,6 +368,7 @@ lesattaquesw[2].addEventListener('click', ()=>{
 //! btn convois de ravitaillement
 
 lesattaquesw[1].addEventListener('click', ()=>{
+    son[4].play()
     reloadingw(tankwardenw)
     warden.amo=warden.amo+5
     amocolow.innerHTML=colonial.amo
