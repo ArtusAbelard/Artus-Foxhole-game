@@ -17,6 +17,8 @@ export let tankwarden = document.querySelector("#tank1")
 export let tankcolow = document.querySelector("#tank2")
 export let tankwardenw = document.querySelector("#tank3")
 
+export let son = document.querySelectorAll("audio")
+
 export let attaque1shootcolo = document.querySelector("#attaque1")
 export let attaque2aeriennecolo = document.querySelector("#attaque2")
 export let attaque3convois = document.querySelector("#attaque3")

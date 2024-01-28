@@ -5,6 +5,9 @@ body{
     margin: 0;
     overflow: hidden;
 }
+audio{
+    display: none;
+}
 #container{
     height: 100%;
     width: 100%;
@@ -118,6 +121,7 @@ body{
     /* position:absolute;
     margin-left: 450px;
     margin-top: 5000px; */
+
     display: none;
     justify-content: center;
     align-items: center;
