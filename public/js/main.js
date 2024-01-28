@@ -7,30 +7,23 @@ son[1].volume=0.08;
 son[2].volume=0.11;
 // son[3].volume=1
 // son[4].volume=1
-son[son.length-2].volume=1
-son[son.length-1].volume=0.8
+son[son.length-2].volume=1;
+son[son.length-1].volume=0.8;
 
-// acceuil.addEventListener("mouseover" ,()=>{
-//     son[0].play()
-//     // son[0].pause()
-// })
-// acceuil.addEventListener("mouseout" ,()=>{
-//     son[0].play()
-// })
 
 
 function randomattack() {
     if (warden.amo==0) {
-        warden.amo=warden.amo+5
-        amowar.innerHTML=warden.amo
+        warden.amo=warden.amo+5;
+        amowar.innerHTML=warden.amo;
         console.log("reloading");  
-        reloadingw(tankwarden)
-        son[4].play()
+        reloadingw(tankwarden);
+        son[4].play();
     }else{
         let attack = Math.floor(Math.random()*3)
         console.log(attack);
         if (attack==0) {
-            fxattack(tankcolo)
+            fxattack(tankcolo);
              
             bombgifw(tankwarden)
             console.log("airbomb!!");

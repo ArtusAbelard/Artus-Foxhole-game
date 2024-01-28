@@ -333,6 +333,7 @@ audio{
 #tank1:hover{
     height: 86%;
     width: 71%;
+    filter: drop-shadow(5px 5px 10px black);
 }
 #attaque1{
     background-image: url(../assets/image/obuss-removebg-preview.png);
@@ -418,6 +419,7 @@ audio{
 #tank2:hover{
     height: 86%;
     width: 71%;   
+    filter: drop-shadow(5px 5px 10px black);
 }
 #tank3{
     height: 85%;
@@ -430,7 +432,8 @@ audio{
 }
 #tank3:hover{
     height: 86%;
-    width: 71%;   
+    width: 71%;  
+    filter: drop-shadow(5px 5px 10px black); 
 }
 #attaquewar1{  
     background-repeat: no-repeat;
